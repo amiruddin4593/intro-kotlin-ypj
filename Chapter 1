@@ -1,0 +1,151 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main() {
+    println("Hello, Android ATC by Amir!!")
+    
+    
+    var x = 1
+    var y = 2
+    
+    println(x)
+    
+    val z = x+y
+    
+    println(z)
+    
+    //implicit declaration (Java) vs explicit declaration
+    
+    // Constant Vs Variable
+    
+    //Constant (val) - Once declared, the value can't be changed
+    
+    val name = "amir"
+    //name = "amiruddin"
+    println(name)
+    
+    //Variable (Var) - once declared, the value can be changed
+    
+    var fullname = "amir"
+    fullname = "amiruddin"
+    println(fullname)
+    
+    //Data types
+    
+    //String --> ""
+    //Char --> ''
+    // saya juga boleh specify data type yg nak digunakan
+    
+    // : (of type)
+    
+    val address:String = "seri kembangan"
+    println(address)
+    
+    //Huruf - pakai Char
+    var jantina:Char = 'L'
+    println(jantina)
+    
+    //operasi 
+    // +
+    
+    val message = "My name is " + name
+    println(message)
+    
+    val messageone = "my name is " +name+ " I live in " +address
+    println(messageone)
+    
+    //String interpolation using $
+    // $ akan cari var yg diclared before
+    
+    val anothermessage = "my name is $name and I live in $address"
+    println(anothermessage)
+    
+    //Kotlin follow the best practice in naming variable using the lower camelcase
+    //eg anotherMessage
+    //bermula dgn huruf kecil, huruf besar utk next ayat
+    
+    //Number
+    
+    var num1:Int = 9
+    var num2:Int = 5
+    
+    var sum:Int = num1 + num2
+    println(sum)
+    
+    //kalau Double, kene specify . walaupun 0
+    //kalau Double
+    
+    //Operation + - * / %
+    
+    var minus = num1 - num2
+    println(minus)
+    
+    var product = num1 * num2
+    println(product)
+    
+    var division = num1 / num2 //jawapan akan jadi integer sbb int/int, so kalau nk double kene change kat num var declaration to double typ
+    println(division)
+    
+    var modulo = num1 % num2 
+    println(modulo)
+    // baki bahagi operasi, contoh 9 bahagi 5 ada baki 4 // biasa digunakan utk algorithm contoh :
+    //% ganjil or genap , num % 2 == 0 (genap) num % 2 == 1 (ganjil)
+    
+   //Boolean (true or false)
+   //usually used for logic operation, eg., when using if else statement
+   
+   var eaten = true
+   var tired:Boolean = false
+    
+    //Boolean operation : && (and), || (or), ! (reverse)
+    
+    println(eaten && tired) //dua2 perlu true utk result/outcome true
+    println(eaten || tired) // salah satu perlu true utl outcome true
+    println(!eaten) // Reverse kalau true, akan return false, kalau false akan return true
+    
+    
+    //Nullable?
+    // null (tiada value)
+    
+    var profession = null // (tiada value)
+    // To declare a var as nullable the data type need to be added with ? when declaring it
+    //eg
+    
+    var newProfession:String? = null // Question mark after the of type declaration means that the var value can be null or any valur
+    println(newProfession)
+    println(profession)
+    newProfession = "Trainer"
+    println(newProfession)
+    
+    //Example of calculation with assumption data type
+    
+    //in this formula, the bmi operation happen on int data type, which can lead to miscalculation
+    
+    var tinggi = 170
+    var berat = 70
+    //var bmi = berat/(tinggi/100)* (tinggi/)
+    
+    //Array
+    //Is a data type to store a collection of repeated items
+    //we create a var to store a collection of scores
+    //index of an array start from 0
+    
+    var scores = arrayOf(50,90,100,80,85,60)
+    
+    println(scores[0]) //To retrieve the first item in the array
+    println(scores[1])
+    println(scores.size) //How many item in the array (length)
+    
+    //Penggunaan readLine() 
+    // digunakan utk dapatkan input dari console dan masuk dalam var yg kita declare
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
